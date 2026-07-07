@@ -8,89 +8,115 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-nav">
+<body class="editorial">
+  <header class="site-nav editorial-nav">
     <a class="brand" href="index.html"><span>H</span><strong>주거 의사결정 리포트</strong></a>
     <nav>
-      <a href="#service">서비스 소개</a>
       <a href="#analyst">분석가</a>
       <a href="#output">결과물</a>
+      <a href="#criteria">분석 기준</a>
       <a href="#process">진행 방식</a>
       <a class="nav-cta" href="consultation.html">상담지 작성</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero premium-hero" id="service">
+    <section class="editorial-hero">
       <div class="hero-copy">
         <p class="eyebrow">국토부 실거래가 기반 · 주거 의사결정 리포트</p>
         <h1>감이 아니라,<br>근거로 좁힙니다.</h1>
         <p class="hero-lead">수십 개 단지 중 어디부터 봐야 할지 모를 때, 실거래가·거래량·수요 흐름·생활권 데이터를 기준으로 먼저 검토할 후보를 압축합니다.</p>
-        <div class="hero-note">추천이 아니라 근거를 드립니다. 목표는 정답을 맞히는 것이 아니라, 무리한 선택과 놓치기 쉬운 리스크를 줄이는 것입니다.</div>
+        <p class="hero-note">추천이 아니라 근거를 드립니다. 목표는 정답을 맞히는 것이 아니라, 무리한 선택과 놓치기 쉬운 리스크를 줄이는 것입니다.</p>
         <div class="hero-actions">
           <a class="btn primary" href="consultation.html">상담지 작성하기</a>
           <a class="btn ghost" href="#output">결과물 예시 보기</a>
         </div>
       </div>
 
-      <aside class="report-preview" aria-label="리포트 미리보기">
-        <div class="preview-top">
-          <span>Report Preview</span>
-          <strong>Candidate TOP3</strong>
+      <aside class="report-preview editorial-report" aria-label="리포트 미리보기">
+        <div class="report-head">
+          <span>Sample Report</span>
+          <strong>Candidate Ranking</strong>
         </div>
-        <div class="rank-list">
-          <div class="rank-item active"><b>01</b><div><strong>후보 단지 A</strong><span>예산 적합성 92 · 거래 유동성 높음</span></div></div>
-          <div class="rank-item"><b>02</b><div><strong>후보 단지 B</strong><span>출퇴근 우수 · 면적 선택 주의</span></div></div>
-          <div class="rank-item"><b>03</b><div><strong>후보 단지 C</strong><span>가격 안정 · 환금성 체크 필요</span></div></div>
+        <div class="winner">
+          <span>1위</span>
+          <h2>래미안 ○○</h2>
+          <div class="score">Score 92</div>
         </div>
-        <div class="score-grid">
-          <div><span>거래 유동성</span><strong>High</strong></div>
-          <div><span>예산 적합성</span><strong>9.2</strong></div>
-          <div><span>리스크 체크</span><strong>3개</strong></div>
+        <div class="report-metrics">
+          <div><span>거래 유동성</span><strong>★★★★★</strong></div>
+          <div><span>실거주 적합</span><strong>★★★★★</strong></div>
+          <div><span>예산 적합성</span><strong>★★★★☆</strong></div>
+          <div><span>리스크</span><strong>★★☆☆☆</strong></div>
         </div>
-        <div class="preview-note">PDF Report · 지역 비교 · 단지 압축 · 체크포인트</div>
+        <div class="report-comment">
+          <b>Check point</b>
+          최근 거래량은 안정적이나, 동일 예산대 대체 후보와 면적 선택을 함께 비교해야 합니다.
+        </div>
       </aside>
     </section>
 
-    <section class="client-section">
-      <div class="section-heading compact">
-        <p class="eyebrow">For whom</p>
-        <h2>이런 분께 추천합니다</h2>
+    <section class="analyst-editorial" id="analyst">
+      <div class="portrait-wrap">
+        <img src="ohe-eun-profile.jpg" width="220" height="220" alt="오혜은 프로필 사진">
       </div>
-      <div class="client-grid">
-        <div>첫 집 또는 실거주 매수를 준비하는 분</div>
-        <div>지역 선택이 어려운 분</div>
-        <div>후보 단지는 있는데 확신이 없는 분</div>
-        <div>구축과 신축 사이에서 고민하는 분</div>
-        <div>예산 안에서 현실적인 선택지를 좁히고 싶은 분</div>
-      </div>
-    </section>
-
-    <section class="analyst-section" id="analyst">
-      <div class="profile-card">
-        <img src="ohe-eun-profile.jpg" width="128" height="128" alt="데이터 분석가 오혜은">
-        <div>
-          <p class="eyebrow">Data Analyst</p>
-          <h2>데이터 분석가 오혜은</h2>
-          <p>서울대학교 인구정책연구센터 전임연구원</p>
-        </div>
-      </div>
-      <div class="statement">
-        <h2>인구이동·주거수요·공간데이터를 분석해온 연구자가 실거래 데이터를 결합해 주거 후보를 압축합니다.</h2>
-        <div class="credential-list">
-          <span>인구이동·주거수요 데이터 분석</span>
-          <span>공간데이터 기반 입지 분석</span>
-          <span>대기업/지자체 프로젝트 경험</span>
-        </div>
+      <div class="analyst-copy">
+        <p class="eyebrow">Analyst</p>
+        <h2>오혜은</h2>
+        <p class="role">서울대학교 인구정책연구센터 전임연구원</p>
+        <p class="analyst-statement">인구이동·주거수요·공간데이터를 분석해온 연구자가 실거래 데이터를 결합해 주거 후보를 압축합니다.</p>
+        <dl class="credential-lines">
+          <div><dt>분석 분야</dt><dd>인구이동·주거수요 데이터 분석</dd></div>
+          <div><dt>공간 분석</dt><dd>공간데이터 기반 입지 분석</dd></div>
+          <div><dt>프로젝트</dt><dd>대기업/지자체 프로젝트 경험</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section class="data-section" id="data">
-      <div class="section-heading">
+    <section class="trust-section">
+      <p class="eyebrow">Why it matters</p>
+      <h2>집을 찍어주는 서비스가 아니라,<br>판단 기준을 정리하는 분석입니다.</h2>
+      <div class="trust-rows">
+        <div><span>01</span><strong>후보 압축</strong><p>네이버부동산의 수많은 매물 중, 내 조건에서 먼저 볼 지역과 단지를 줄입니다.</p></div>
+        <div><span>02</span><strong>역검증</strong><p>이미 보고 있는 단지가 있다면, 거래량·가격 흐름·수요 측면에서 타당성을 확인합니다.</p></div>
+        <div><span>03</span><strong>리스크 정리</strong><p>거래가 끊긴 단지, 무리한 예산, 환금성 리스크를 함께 점검합니다.</p></div>
+      </div>
+    </section>
+
+    <section class="output-editorial" id="output">
+      <div class="section-title">
+        <p class="eyebrow">Deliverables</p>
+        <h2>리포트에서 확인할 수 있는 것</h2>
+      </div>
+      <div class="report-spread">
+        <div class="spread-page cover">
+          <span>PDF Report</span>
+          <h3>후보 지역 비교</h3>
+          <p>예산·출퇴근·생활권 기준으로 지역별 장단점을 정리합니다.</p>
+        </div>
+        <div class="spread-page">
+          <span>Page 02</span>
+          <h3>단지 후보 압축</h3>
+          <p>실거래량과 가격대를 기준으로 먼저 볼 단지를 정리합니다.</p>
+        </div>
+        <div class="spread-page">
+          <span>Page 03</span>
+          <h3>최종 후보 TOP3</h3>
+          <p>임장 우선순위와 체크포인트를 제시합니다.</p>
+        </div>
+        <div class="spread-note">
+          <strong>주의할 리스크</strong>
+          <p>거래 유동성, 가격 변동성, 환금성, 면적 선택 리스크를 함께 봅니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="criteria-editorial" id="criteria">
+      <div class="section-title">
         <p class="eyebrow">Analysis Criteria</p>
         <h2>분석 기준</h2>
       </div>
-      <div class="criteria-grid premium">
+      <div class="criteria-list">
         <article><h3>국토부 실거래가</h3><p>최근 거래 가격, 거래 빈도, 면적별 거래 흐름을 확인합니다.</p></article>
         <article><h3>수요 흐름</h3><p>2030 매수 흐름과 인구 이동을 함께 검토합니다.</p></article>
         <article><h3>생활권</h3><p>출퇴근, 생활편의, 실거주 지속 가능성을 봅니다.</p></article>
@@ -98,52 +124,22 @@
       </div>
     </section>
 
-    <section class="output-section" id="output">
-      <div class="section-heading">
-        <p class="eyebrow">Deliverables</p>
-        <h2>리포트에서 확인할 수 있는 것</h2>
-      </div>
-      <div class="report-section">
-        <div class="report-pages">
-          <div class="paper page-main">
-            <span>Page 01</span>
-            <h3>후보 지역 비교</h3>
-            <p>예산·출퇴근·생활권 기준으로 지역별 장단점 정리</p>
-          </div>
-          <div class="paper">
-            <span>Page 02</span>
-            <h3>단지 후보 압축</h3>
-            <p>실거래량과 가격대를 기준으로 먼저 볼 단지 정리</p>
-          </div>
-          <div class="paper">
-            <span>Page 03</span>
-            <h3>최종 후보 TOP3</h3>
-            <p>임장 우선순위와 체크포인트 제시</p>
-          </div>
-        </div>
-        <div class="output-copy">
-          <h3>주의할 리스크까지 함께 정리합니다.</h3>
-          <p>거래가 끊긴 단지, 무리한 예산, 환금성 리스크를 함께 점검해 “먼저 볼 후보”와 “조심할 후보”를 구분합니다.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="process-section" id="process">
-      <div class="section-heading">
+    <section class="process-editorial" id="process">
+      <div class="section-title">
         <p class="eyebrow">Process</p>
         <h2>진행 방식</h2>
       </div>
-      <div class="process-line refined">
-        <article><span>01</span><h3>상담지 작성</h3></article>
-        <article><span>02</span><h3>분석 범위 검토</h3></article>
-        <article><span>03</span><h3>견적 및 일정 안내</h3></article>
-        <article><span>04</span><h3>결제 후 분석 진행</h3></article>
-        <article><span>05</span><h3>PDF 리포트 제공</h3></article>
-        <article><span>06</span><h3>후속 질문 또는 간단 검토</h3></article>
-      </div>
-      <p class="aftercare">리포트 수령 후 후기를 남겨주시면, 감사의 의미로 후속 질문 1회 또는 후보 단지 1곳 간단 검토를 제공합니다.</p>
-      <div class="final-cta">
-        <h2>상담지 검토 후 분석 범위와 견적을 안내드립니다.</h2>
+      <ol class="process-list">
+        <li><span>01</span>상담지 작성</li>
+        <li><span>02</span>분석 범위 검토</li>
+        <li><span>03</span>견적 및 일정 안내</li>
+        <li><span>04</span>결제 후 분석 진행</li>
+        <li><span>05</span>PDF 리포트 제공</li>
+        <li><span>06</span>후기 작성 시 후속 질문 1회 또는 후보 단지 1곳 간단 검토</li>
+      </ol>
+      <p class="aftercare">가격은 고정표로 먼저 공개하지 않습니다. 상담지 검토 후 분석 범위와 견적을 안내드립니다.</p>
+      <div class="final-cta editorial-final">
+        <h2>내 조건에서 먼저 볼 후보를 좁혀보세요.</h2>
         <a class="btn primary" href="consultation.html">상담지 작성하기</a>
       </div>
     </section>

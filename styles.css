@@ -550,6 +550,23 @@ pre { overflow: auto; min-height: 160px; border-radius: 18px; background: #10261
   transform: translate(-50%, -50%);
 }
 
+.process-editorial .process-list li {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 34px);
+  min-width: 0;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.25;
+}
+
+.process-editorial .process-list span {
+  flex: 0 0 76px;
+}
+
+.process-editorial .process-list i {
+  flex: 0 0 20px;
+}
+
 @media (max-width: 640px) {
   .editorial-hero h1 {
     font-size: clamp(54px, 18vw, 78px);
@@ -558,8 +575,22 @@ pre { overflow: auto; min-height: 160px; border-radius: 18px; background: #10261
 
   .process-list li {
     grid-template-columns: 54px 18px 1fr;
+    font-size: clamp(19px, 6vw, 27px);
+  }
+
+  .process-editorial .process-list li {
     gap: 12px;
     font-size: clamp(19px, 6vw, 27px);
+  }
+
+  .process-editorial .process-list span {
+    flex-basis: 42px;
+  }
+
+  .process-editorial .process-list i {
+    flex-basis: 18px;
+    width: 18px;
+    height: 18px;
   }
 
   .brand-statement h2 {

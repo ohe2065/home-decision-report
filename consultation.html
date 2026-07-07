@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>상담지 작성 | 주거 의사결정 리포트</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand" href="index.html"><span>H</span><strong>주거 의사결정 리포트</strong></a>
+    <nav><a href="index.html">홈</a><a href="complete.html">완료 후 안내</a></nav>
+  </header>
+  <main class="form-page">
+    <section class="form-hero">
+      <p class="eyebrow">Consultation</p>
+      <h1>분석은 상담지에서 시작됩니다</h1>
+      <p>작성 내용은 서버에 저장되지 않습니다. 응답 완료 후 “작성 내용 복사” 버튼을 눌러 상담자에게 붙여넣어 공유해주세요.</p>
+    </section>
+    <section class="questionnaire">
+      <div class="field two">
+        <label>이름 또는 닉네임<input id="name" placeholder="예: 오혜은"></label>
+        <label>리포트 받을 이메일 또는 연락처<input id="contact" placeholder="예: email@example.com"></label>
+      </div>
+      <div class="field two">
+        <label>직장 위치<input id="workplace" placeholder="예: 광화문역, 강남역, 판교역"></label>
+        <label>현재 거주 지역<input id="currentArea" placeholder="예: 경기 성남시 수정구"></label>
+      </div>
+      <label>현재 고민 단계<select id="stage"><option>지역도 모르겠다</option><option>지역은 정했다</option><option>단지까지 정했다</option></select></label>
+      <div class="field two">
+        <label>희망 매수가격 최소<input id="budgetMin" placeholder="예: 8억"></label>
+        <label>희망 매수가격 최대<input id="budgetMax" placeholder="예: 10억"></label>
+      </div>
+      <div class="field two">
+        <label>대중교통 최대 허용<select id="transit"><option>40분 이내</option><option>50분 이내</option><option selected>60분 이내</option><option>70분 이내</option><option>90분 이내</option></select></label>
+        <label>희망 전용면적<select id="area"><option selected>잘 모르겠음</option><option>59㎡ 이하</option><option>59㎡ 전후</option><option>84㎡ 전후</option><option>84㎡ 이상</option></select></label>
+      </div>
+      <label>가족/거주 계획<textarea id="family" placeholder="예: 2인 거주 예정, 향후 출산 고려"></textarea></label>
+      <div>
+        <p class="label-text">우선순위 최대 3개</p>
+        <div class="pill-grid" id="priorityGrid">
+          <button type="button" class="pill">출퇴근</button><button type="button" class="pill">예산</button><button type="button" class="pill">역세권</button><button type="button" class="pill">거래량</button><button type="button" class="pill">학군/육아</button><button type="button" class="pill">주차</button><button type="button" class="pill">향후 매도</button>
+        </div>
+      </div>
+      <label>관심 지역/단지/링크<textarea id="candidates" placeholder="예: 송파구, 분당구, 광교, 송도 / 관심 단지 링크"></textarea></label>
+      <label>이번 분석에서 가장 궁금한 점<textarea id="question" placeholder="예: 미아와 길음 중 어디가 나을까요?"></textarea></label>
+    </section>
+    <section class="summary-panel">
+      <h2>복사될 내용</h2>
+      <pre id="summary">작성한 내용이 여기에 정리됩니다.</pre>
+      <button class="btn primary" type="button" id="copyBtn">작성 내용 복사</button>
+      <p class="copy-state" id="copyState" hidden>복사되었습니다. 완료 안내로 이동합니다.</p>
+    </section>
+  </main>
+  <script src="site.js"></script>
+</body>
+</html>

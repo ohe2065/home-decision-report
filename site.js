@@ -59,9 +59,6 @@ if (copyBtn) {
   copyBtn.addEventListener("click", async () => {
     await navigator.clipboard.writeText(summary.textContent);
     copyState.hidden = false;
-    setTimeout(() => {
-      window.location.href = "complete.html";
-    }, 900);
   });
 }
 
